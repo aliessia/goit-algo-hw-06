@@ -94,3 +94,13 @@ if __name__ == "__main__":
     print("Результат DFS:", dfs_result)
     print("Найкоротші шляхи за алгоритмом Дейкстри:", shortest_paths_info)
 
+num_nodes = len(G_fictional.nodes)
+num_edges = len(G_fictional.edges)
+print("Кількість вершин у графі:", num_nodes)
+print("Кількість ребер у графі:", num_edges)
+nodes_list = list(G_fictional.nodes)
+edges_list = list(G_fictional.edges)
+print("Список вершин:", nodes_list)
+print("Список ребер:", edges_list)
+diameter = nx.diameter(G_fictional)
+print("Діаметр графа:", diameter)
